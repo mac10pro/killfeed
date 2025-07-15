@@ -1,0 +1,13 @@
+﻿## Interface: 30300
+## Title: |cffff9933killfeed|r
+## Notes: Counter-Strike-style kill feed for PvP combat
+## Author: You
+## Version: 1.0
+## DefaultState: Enabled
+## LoadOnDemand: 0
+## SavedVariables: KillFeedDB
+## OptionalDeps: Blizzard_CombatLog
+
+# Core files
+killfeed.lua
+killfeed.xml
