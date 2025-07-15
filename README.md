@@ -1,26 +1,32 @@
-# KillFeed Addon for WoW 3.3.5  
-A Counter-Strike-style kill feed using the combat log
+# KillFeed (WoW 3.3.5 Addon)
 
-## Description
+A Counter-Strike-style PvP kill feed for World of Warcraft 3.3.5. Displays who killed whom, their class, and the spell used.
 
-This addon replicates a kill feed similar to *Counter-Strike* in **World of Warcraft 3.3.5 (Wrath of the Lich King)**. It listens to the combat log and displays messages like:
+## 📌 Description
+
+KillFeed listens to the combat log and shows PvP kill messages in a format like:
 
 ```
 Bobby [Priest] [Shadow Word: Pain] → Gronk [Warrior]
 ```
 
-## Features
-
-- PvP kill tracking
-- Displays killer and victim names
-- Shows class of both players
-- Shows the spell or "Melee" used
-- Simple on-screen text feed
-- Lightweight and efficient
+This mimics the visual kill feed found in games like Counter-Strike.
 
 ---
 
-## Folder Structure
+## 🔧 Features
+
+- Real-time PvP kill detection
+- Shows:
+  - Killer name and class
+  - Victim name and class
+  - Spell or melee used
+- Clean, simple on-screen feed
+- 100% local — no server messages or dependencies
+
+---
+
+## 📁 Folder Structure
 
 ```
 KillFeed/
@@ -31,7 +37,7 @@ KillFeed/
 
 ---
 
-## KillFeed.toc
+## 📄 KillFeed.toc
 
 ```
 ## Interface: 30300
@@ -45,7 +51,7 @@ KillFeed.lua
 
 ---
 
-## KillFeed.xml
+## 🧱 KillFeed.xml
 
 ```
 <Ui xmlns="http://www.blizzard.com/wow/ui/"
@@ -74,7 +80,7 @@ KillFeed.lua
 
 ---
 
-## KillFeed.lua
+## 🧠 KillFeed.lua
 
 ```
 local frame = CreateFrame("Frame")
@@ -123,9 +129,28 @@ end)
 
 ---
 
-## Optional Additions
+## 🚀 Optional Ideas
 
-- Fade-out animation instead of instant clear
-- Scrolling log of recent kills (like MSBT or Parrot)
-- Sound effects (with ChatSounds or custom)
-- Arena/BG only mode
+- Add fade-out animations or scroll effects (like MSBT or Parrot)
+- Queue recent kills in a multi-line log
+- Add sound support via ChatSounds or custom audio
+- Restrict feed to Battlegrounds or Arenas only
+
+---
+
+## ✅ Compatibility
+
+- Works on Wrath of the Lich King (3.3.5a)
+- Tested with ElvUI, Recount, Parrot, MSBT
+
+---
+
+## 📜 License
+
+This project is open-source and free to use or modify.
+
+---
+
+## 🙋‍♂️ Contributing
+
+Got a feature idea or bug fix? Open an issue or PR.
