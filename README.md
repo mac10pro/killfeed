@@ -41,12 +41,18 @@ KillFeed/
 
 ```
 ## Interface: 30300
-## Title: KillFeed
-## Notes: Counter-Strike-style kill feed for 3.3.5
+## Title: |cffff9933killfeed|r
+## Notes: Counter-Strike-style kill feed for PvP combat
+## Author: mac10
 ## Version: 1.0
-## Author: You
-KillFeed.xml
-KillFeed.lua
+## DefaultState: Enabled
+## LoadOnDemand: 0
+## SavedVariables: KillFeedDB
+## OptionalDeps: Blizzard_CombatLog
+
+# Core files
+killfeed.lua
+killfeed.xml
 ```
 
 ---
